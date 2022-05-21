@@ -1,5 +1,15 @@
 # @aws-amplify/ui
 
+## 3.9.2
+
+### Patch Changes
+
+- [#1910](https://github.com/aws-amplify/amplify-ui/pull/1910) [`766bf302c`](https://github.com/aws-amplify/amplify-ui/commit/766bf302c4d594ae92f1506967b6f1858687a41c) Thanks [@wlee221](https://github.com/wlee221)! - refactor(internal): Move `autoSignIn` logic out of `signUp` actor
+
+* [#1910](https://github.com/aws-amplify/amplify-ui/pull/1910) [`766bf302c`](https://github.com/aws-amplify/amplify-ui/commit/766bf302c4d594ae92f1506967b6f1858687a41c) Thanks [@wlee221](https://github.com/wlee221)! - On userpools with sms mfa required, authenticator will now automatically redirect user to sms mfa page after successful sign up.
+
+  Previously, end users needed to sign in again to go to the sms mfa page ([#1660](https://github.com/aws-amplify/amplify-ui/issues/1660)).
+
 ## 3.9.1
 
 ### Patch Changes
