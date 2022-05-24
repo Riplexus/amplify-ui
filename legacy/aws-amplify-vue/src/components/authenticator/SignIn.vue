@@ -124,6 +124,7 @@ export default {
     setError: function(e) {
       this.error = this.$Amplify.I18n.get(e.message || e);
       this.logger.error(this.error)
+      AmplifyEventBus.$emit('authError', { error: e, message: this.error })
     },
     usernameFieldChanged: function(data) {
       const { usernameField, username, email, phoneNumber } = data;
